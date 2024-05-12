@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="styledashboard.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css">
+     <title>Books Dashboard</title>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li class="profile">
+                <a href="home.html"> 
+                    <i class="fa-solid fa-book fa-2xl"></i>
+                    <h2>Books.</h2>
+                </a>
+            </li>
+            <li> 
+                <a href="home.html"> 
+                   <i class="fas fa-home fa-2xl"></i>
+                   <h3>Home</h3>
+                </a>
+            </li>
+            <li> 
+                <a href="home.html#books"> 
+                   <i class="fas fa-book fa-2xl"></i>
+                   <h3>Books</h3>
+                </a>
+            </li>
+            <li> 
+                <a class="active" href="dashboard.html"> 
+                   <i class="fas fa-chart-pie fa-2xl"></i>
+                   <h3>charts</h3>
+                </a>
+            </li>
+            <li class="log-out">
+                <a href="#"> 
+                   <i class="fas fa-sign-out-alt fa-2xl"></i>
+                   <h3>logOut</h3>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="title-info"> 
+            <h1>Dashboard</h1>
+        </div>
+
+        <div class="data-info">
+            <div class="box">
+                <i class="fas fa-user"></i>
+                <div class="data">
+                    <p>Readers</p>
+                    <span>100</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-pen"></i>
+                    <div class="data">
+                        <p>reviews</p>
+                        <span>3654</span>
+                    </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-book"></i>
+                <div class="data">
+                    <p>books</p>
+                    <span>2500</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-dollar-sign"></i>
+                    <div class="data">
+                        <p>revunes</p>
+                        <span>$2500</span>
+                    </div>
+            </div>
+        </div><br>
+        <div class="container">
+            <h1>Book Acquisition & Book Types</h1><br>
+            <div class="charts">
+                <div class="chart earnings-chart">
+                    <h2>Book Acquisition</h2>
+                    <canvas id="lineChart"></canvas>
+                </div>
+    
+                <div class="chart distribution-chart">
+                    <h2> Book Types (Academic vs. Non-Academic)</h2>
+                    <canvas id="pieChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chart.js"></script>    
+</body>
+</html>

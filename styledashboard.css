@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    color:black ;
+    font-family: sans-serif;
+}
+
+body {
+    background-color:hwb(0 92% 5% / 0.144) ;
+    display:flex;
+}
+.img-box{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white ;
+    flex-shrink: 0;
+}
+img-box img{
+    width: 50%;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.menu{
+    background-color: #c98847 ;
+    width: 60px;
+    padding: 20px 0;
+    border-radius: 0 20px 20px 0;
+    overflow: hidden;
+    transition: .5s;
+    font-weight: bolder;
+}
+.menu:hover {
+    width: 260px;
+}
+ul{
+    list-style: none;
+    position: relative;
+    height:95% ;
+}
+ul li a{
+    display:block;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap:40px;
+    transition: .5s;
+    cursor: pointer;
+}
+ul li a:hover,.active{
+    background-color:#ffffff55;
+}
+.data-info .box:hover{
+    background-color: #b57a3f;
+}
+
+.content{
+    width: 100%;
+    margin:10px;
+}
+.title-info{
+    background-color:#c98847;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.data-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.data-info .box{
+    background-color: #c98847;
+    height: 150px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.data-info .box i{
+    font-size:50px;
+}
+.data-info .box .data{
+    text-align: center;
+}
+.data-info .box .data .span{
+    font-size:50px;
+}
+
+.charts {
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chart {
+    width: 45%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chart h2 {
+    margin-bottom: 10px;
+}
+
+.earnings-chart {
+    background-color: #ffffff;
+    box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.distribution-chart {
+    background-color: #ffffff;
+    box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+.container h1 {
+    text-align: center;
+}
